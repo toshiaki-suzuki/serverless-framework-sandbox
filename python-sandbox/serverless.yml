@@ -7,5 +7,8 @@ provider:
   runtime: python3.11
 
 functions:
-  hello:
-    handler: handler.hello
+  sndEmailWithAttachment:
+    handler: functions.sndEmailWithAttachment.lambda_handler
+
+plugins:
+  - serverless-python-requirements
